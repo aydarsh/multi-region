@@ -18,7 +18,7 @@ resource "aws_instance" "test" {
   ami                         = data.aws_ami.ubuntu.id
   instance_type               = "t4g.micro"
   root_block_device {
-    volume_size           = 10
+    volume_size           = 12
     delete_on_termination = true
   }
   
